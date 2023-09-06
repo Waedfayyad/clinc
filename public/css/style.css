@@ -1,0 +1,295 @@
+body {
+    font-family: 'Noto Kufi Arabic','Nunito', sans-serif;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+/* nav a { padding: .5rem; }  */
+
+#internalWindow {
+    /* border-radius: 10px; Add rounded corners */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+ }
+
+
+ #floating-window {
+   
+    top: 16%;
+    left: 25%;
+    background: transparent;
+    border: 2px solid rgba(15, 231, 130, 0.5);
+    border-radius: 10px; /*  position: fixed; transform: translate(-50%, -50%); Add rounded corners */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    z-index: 9999;
+    width: 80%;
+    padding: 20px;
+ }
+ 
+ #floating-window h2 {
+    text-align: center; /* Center the title */
+    margin-top: 0;
+ }
+ 
+ #floating-window p {
+    margin-top: 20px;
+}
+.grid1 {
+ /*   margin-top: 100px;*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+
+}
+.section {
+    border: 1px solid black;
+    height: 220px; 
+    overflow-y: scroll;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 2 * 60px); /* 60px is the height of the header and footer */
+  }
+
+  /* Define styles for the sidebar */
+  .sidebar {
+    /*background-color: #eee;*/
+    position: relative;
+    top: 90px;
+    right: 20px;
+    width: 20%;
+  }
+
+  /* Define styles for the main content */
+  .content {
+   /* background-color: #fff;*/
+    position: relative;
+    top: 90px;
+    width: 80%;
+    padding: 20px;
+  }
+  .content1 {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    /*background-color: #f1f1f1;*/
+  }
+  
+/*-----------------------------------------------------------------*/
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    
+    background-position: center;
+    background-size: cover;
+}
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: transparent;
+    border: 2px solid rgba(15, 231, 130, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h2{
+    font-size: 1.5em;
+    color: #0f0f0f;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    /* border-bottom: 2px solid #070707; */
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+  /*   transform: translateY(-50%); */
+    color: #0c0c0c;
+    font-size: 1em;
+    pointer-events: none;
+    /* transition: .5s; */
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #080808;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #3d0685;
+    font-size: 1.2em;
+    top: 15px;
+}
+.forget{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #050505;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.forget label input{
+    margin-right: 3px;
+    
+}
+.forget label a{
+    color: #070707;
+    text-decoration: none;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #b3dcf7;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register{
+    font-size: .9em;
+    color: #16025f;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: #461fd3;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+.circular-icon {
+    border-radius: 50%;
+    width: 30px; /* set the width of the image */
+    height: 30px; /* set the height of the image */
+    object-fit: cover; /* make sure the image covers the element */
+  }
+  .top1 {
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+  
+  }
+  .r1 {
+    height: 80%;
+    width: 19%;
+    position: fixed;
+    z-index: 1;
+    top: 15%;
+    right: 1%;
+    overflow-x: hidden;
+    padding-top: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 10px 10px 20px  rgb(110, 108, 108); 
+  }
+  .l1 {
+    height: 85%;
+    width: 79%;
+    position: fixed;
+    z-index: 1;
+    top: 14%;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  
+  }
+  .l2 {
+    height: 85%;
+    width: 79%;
+    position: fixed;
+    z-index: 1;
+    top: 14%;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+   
+  /* animation hover for element a ========================================================*/
+  a::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  a::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsl(200 100% 80%);
+    z-index: -1;
+    transition: transform .9s ease;
+  }
+  
+  a {
+    position: relative;
+    /*font-size: 5rem;*/
+  }
+/* Style the video: 100% width and height to cover the entire window   
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 1%;
+  height: 90%;
+*/
+#bg-video {
+  padding: 0;
+  position: fixed;
+  right: 4%;
+  width: 90%;
+  top: 70%;
+  z-index: -100;
+  background-position: center;
+}  
+
